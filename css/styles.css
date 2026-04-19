@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+h1,
+h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+p,
+figcaption {
+    font-size: 1.5em;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    /* Para salvar la cabecera */
+    padding: 6rem 10vw;
+    /* Secciones de una pantalla de alto como mÃ­nimo */
+    min-height: 100vh;
+    /* Centrado vertical del contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section > h2 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 0.5em 0;
+}
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem 5vw;
+    /* Para evitar que las imÃ¡genes aparezcan por encima con el scroll, lo ponemos en primer plano con la propiedad z-index */
+    z-index: 1;
+    /* Para que se coloque el tÃ­tulo al lado del menÃº */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu > ul {
+    width: 100%;
+    padding: 0.2em;
+    /* ColocaciÃ³n automÃ¡tica de las opciones del menÃº */
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#menu > ul > li {
+    list-style: none;
+}
+
+#menu > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#menu > ul > li > a:hover {
+    text-decoration: line-through;
+}
+
+.masonry-gallery {
+  column-count: 3;
+  gap: 2rem;
+}
+
+.masonry-gallery > figure {
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: white;
+}
+
+.masonry-gallery > figure > img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.masonry-gallery > figure > figcaption {
+  margin-top: 1rem;
+}
+
+.marquesina {
+    overflow: clip;
+    padding: 0;
+    background-color: white;
+}
+
+.marquesina > div {
+    width: max-content;
+    display: flex;
+    gap: 3rem;
+    padding-left: 3rem;
+    animation: marquesina 6s linear infinite forwards;
+    margin-top: 0;
+}
+
+.marquesina > div > p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+@keyframes marquesina {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.work-gallery {
+  column-count: 4;
+  gap: 2rem;
+}
+
+.work-gallery > figure {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color:transparent;
+}
+
+.work-gallery > figure > img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.work-gallery > figure > figcaption {
+  margin-top: 1rem;
+}
+
+
