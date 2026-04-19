@@ -32,11 +32,8 @@ figcaption {
 section {
     width: 100%;
     margin: auto;
-    /* Para salvar la cabecera */
     padding: 6rem 10vw;
-    /* Secciones de una pantalla de alto como mÃ­nimo */
     min-height: 100vh;
-    /* Centrado vertical del contenido */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,9 +54,7 @@ header {
     top: 0;
     width: 100%;
     padding: 0.5rem 5vw;
-    /* Para evitar que las imÃ¡genes aparezcan por encima con el scroll, lo ponemos en primer plano con la propiedad z-index */
     z-index: 1;
-    /* Para que se coloque el tÃ­tulo al lado del menÃº */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +63,6 @@ header {
 #menu > ul {
     width: 100%;
     padding: 0.2em;
-    /* ColocaciÃ³n automÃ¡tica de las opciones del menÃº */
     display: flex;
     justify-content: space-around;
     gap: 1rem;
@@ -106,6 +100,32 @@ header {
 
 .masonry-gallery > figure > figcaption {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .masonry-gallery > figure > figcaption {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
 }
 
 .marquesina {
@@ -154,5 +174,158 @@ header {
 .work-gallery > figure > figcaption {
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+  .work-gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .work-gallery > figure > figcaption {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work-gallery {
+    column-count: 1;
+  }
+}
+
+#about {
+    background:white;
+    padding: 120px 60px 80px;
+    box-sizing: border-box;
+}
+
+#about h2 {;
+    margin-bottom: 90px;
+    color: black;
+}
+
+
+.row {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.column {
+    float: left;
+    box-sizing: border-box;
+}
+
+.izquierda {
+    width: 35%; 
+}
+
+.izquierda figure {
+    margin: 0;
+    max-width: 320px;
+    background: #eaeaea;
+}
+
+.izquierda img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.derecha {
+    width: 65%;
+    padding-left: 80px;
+}
+
+.texto-about {
+    max-width: 520px;
+}
+
+.texto-about p {
+    margin: 0 0 24px;
+    font-size: 12px;
+    line-height: 1.35;
+    color: #000000;
+}
+
+.texto-about p:last-child {
+    margin-bottom: 0;
+}
+
+#contact {
+    background-color: white;
+    min-height: 100vh;
+    padding: 110px 60px 80px;
+    box-sizing: border-box;
+}
+
+#contact h2 {
+    margin: 0 0 70px 0;
+    text-align: center;
+    color: black;
+}
+
+#contact .contact-imagen {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#contact .contact-imagen > div{
+    display: inline-block;
+}
+
+#contact .contact-imagen figure {
+    margin:0;
+    width:265px;
+}
+
+#contact .contact-imagen img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#contact .contact-links {
+    width: 100%;
+}
+
+#contact .contact-links::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#contact .contact-links > div {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#contact .contact-links a {
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#contact .contact-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
 
