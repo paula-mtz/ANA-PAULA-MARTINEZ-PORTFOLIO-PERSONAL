@@ -325,6 +325,18 @@ header {
     margin-bottom: 3rem;
 }
 
+header h1 a {
+    color: black;
+    text-decoration: none;
+    font: inherit;
+    letter-spacing: inherit;
+}
+
+header h1 a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 
 
 
